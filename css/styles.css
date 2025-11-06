@@ -1,0 +1,266 @@
+:root {
+    --primary-color: #1b3242;
+    --secondary-color: #B4B8AB;
+    --light-color: #ffffff;
+    --dark-color: #333;
+    --text-color: #ffffff;
+    --text-color-2: #c4c4c4;
+    --text-color-3: #0a95e6;
+    --text-color-4: #bb9d1a;
+    --background-color: #3a3a3a;
+    --background-color-2: #d8d8d8;
+    --background-color-3: #8a7f7f;
+    --background-color-4: #70b2d1;
+    --line-height-1: 1.6;
+    --line-height-2: 1.8;
+    --line-height-3: 2.4;
+    --padding-1: .5rem;
+    --padding-2: 1rem;
+    --padding-3: 2rem;
+    --padding-4: 3rem;
+    --padding-5: 4rem;
+    --margin-1: .5rem;
+    --margin-2: 1rem;
+    --margin-3: 1.5rem;
+    --margin-4: 7rem;
+    --gap-1: 1rem;
+    --gap-2: 2rem;
+    --gap-3: 3rem;
+    --gap-4: 4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--light-color);
+    min-height: 100vh;
+    font-size: 1em; /* 16px */
+    display: grid;
+    grid-template-rows: auto 3fr;
+    grid-template-columns: 1fr;
+    line-height: var(--line-height-1);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: var(--padding-2) var(--padding-5);
+}
+
+.nav-links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--text-color);
+    list-style: none;
+    gap: var(--gap-2);
+    padding:  0 var(--padding-1);
+    width: 450px;
+}
+
+.nav-links ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    width: auto;
+}
+
+.nav-links ul li a:hover {
+    color: var(--text-color-3);
+}
+
+main {
+    /* background-image: url(../img/fondo-index-claro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: var(--background-color-4);
+    height: 100vh;
+    text-align: center;
+}
+
+.hero h1{
+    margin: var(--margin-3);
+    font-size: 4em;
+    color: var(--text-color);
+    /* text-shadow: #ffffff 2px 2px 4px; */
+}
+.hero h2 {
+    margin-bottom: var(--margin-2);
+    color: var(--text-color-3);
+}
+
+.hero p {
+    margin-bottom: var(--margin-1);
+    font-size: 1.25em;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+
+.fotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--gap-3);
+    margin-top: var(--margin-4);
+}
+
+.picture {
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--light-color);
+    padding: var(--padding-1);
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(200px, 1fr));
+    gap: var(--gap-1);
+    text-align: center;
+}
+
+.info-footer {
+    margin: var(--margin-1);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: var(--gap-1);
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+.info-footer section {
+    margin: var(--margin-1); 
+    min-width: 300px;
+}
+
+.info-footer h3 {
+    margin-bottom: var(--margin-1);
+    font-size: 1.5em;
+    color: var(--text-color-3);
+}
+
+.info-footer span {
+    font-size: 1.2em;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+.info-footer p {
+    margin-bottom: var(--margin-1);
+    font-size: 1.1em;
+    color: var(--text-color-2);
+}
+
+.footer-links ul li {
+    display: grid;
+    list-style: none;
+}
+
+.footer-links ul {
+    display: grid;
+    grid-template-columns: auto;
+    gap: var(--gap-1);
+}
+
+.footer-links ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.footer-links ul li a:hover {
+    color: var(--text-color-3);
+}
+
+footer span {
+    text-align: center;
+    /* margin-top: var(--margin-1); */
+    font-size: 0.9em;
+    color: var(--text-color-3);
+}
+
+/* Formularios Login y Registro */
+
+.form-container {
+    background-color: var(--background-color-2);
+    padding: var(--padding-4);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 4rem auto;
+}
+
+.form-container h2 {
+    margin-bottom: var(--margin-2);
+    color: var(--dark-color);
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: var(--margin-1);
+    font-weight: 600;
+    color: var(--dark-color);
+    text-align: left;
+}
+
+.form-container input {
+    width: 100%;
+    padding: var(--padding-1);
+    margin-bottom: var(--margin-2);
+    border: 1px solid var(--light-color);
+    border-radius: 4px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: var(--padding-2);
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: var(--text-color-3);
+}
+
+.hidden {
+    display: none;
+}
+
+.switch-link {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.switch-link:hover {
+    color: var(--text-color-3);
+}
+
+.remember-me input {
+    margin-right: var(--margin-1);
+    align-content: left;
+    
+}
+
+/* Fin Formularios Login y Registro */
+
