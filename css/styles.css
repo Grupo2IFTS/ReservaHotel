@@ -256,11 +256,28 @@ footer span {
     color: var(--text-color-3);
 }
 
-.remember-me input {
-    margin-right: var(--margin-1);
-    align-content: left;
-    
+
+
+.remember-me {
+    display: flex;         /* Hace que el label sea un contenedor flexible */
+    align-items: center;   /* Centra verticalmente el input y el texto */
+    gap: var(--margin-1);  /* Usa gap para el espacio entre el checkbox y el texto */
 }
 
-/* Fin Formularios Login y Registro */
+
+.remember-me input {
+    margin-bottom: 0; /* Anula el margin-bottom que tenías en .form-container input */
+    width: auto;      /* Asegura que el checkbox solo tome el ancho necesario */
+}
+
+
+.form-options {
+    display: flex;
+    justify-content: space-between; /* Manda un elemento a la izquierda y el otro a la derecha */
+    align-items: center;
+    margin-bottom: var(--margin-2); /* Espacio debajo de las opciones */
+}
+
+/* --- FIN: CORRECCIONES PARA LOGIN/REGISTRO --- */
+
 
